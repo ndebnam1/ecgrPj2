@@ -19,13 +19,22 @@ void Functions::generateList(){
 }
 void Functions::printEmployees(){
 	for(int i = 0; i < employeeList.size(); i ++){
-		cout << "Name: " << " " <<  employeeList[i].getName() << "Job Title: " << employeeList[i].getJobTitle() << " " << "Wage: " << employeeList[i].getWage() << endl;
+		cout << "Name: " <<   employeeList[i].getName() <<endl <<  "Job Title: " << employeeList[i].getJobTitle() << endl << "Wage: " << employeeList[i].getWage() << endl<< "------------" << endl;
 	}
 }
 
 void Functions::calculateTotalWages(){
+	double hours;
 	for( int i = 0; i < employeeList.size(); i++ ){
-
-		
+	
+	cout << "Please enter how many hours " << employeeList[i].getName() << " has worked this pay period: ";
+	cin >>  hours;
+	employeeList[i].calculateWage(hours);
 	}
+ 
+
 }
+
+
+
+
