@@ -1,13 +1,14 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
-
+#include <string>
+using namespace std;
 class Functions{
 	public:
 	Functions();
-	void printEmployees();
-	void calculateTotalWages();
-	void generateList();
-	void addNewEmployee();
+	static void printEmployees();
+	static void calculateTotalWages();
+	static void generateList();
+	 static void addNewEmployee();
 
 	
 
